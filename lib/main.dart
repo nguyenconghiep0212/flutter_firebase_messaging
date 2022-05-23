@@ -8,8 +8,8 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 // Handler background message
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
-  NotificationApi.showNotification(
-      title: 'Local Notification', body: 'Message ID:${message.messageId}');
+  // NotificationApi.showNotification(
+  //     title: 'Local Notification', body: 'Message ID:${message.messageId}');
   log('CHECKPOINT 1: ${message.messageId}');
 }
 
